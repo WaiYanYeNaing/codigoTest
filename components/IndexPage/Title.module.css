@@ -1,0 +1,26 @@
+.container {
+  width: 75%;
+  margin: 125px auto 0;
+}
+
+.title {
+  height: 70px;
+  font-weight: 800;
+  font-size: 62px;
+  margin: 0;
+  font-family: "Neue Einstellung Bold", sans-serif;
+}
+
+@media (max-width: 1050px) {
+  .title {
+    font-size: 6.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 13vw;
+    line-height: 12vw;
+    display: inline;
+  }
+}
