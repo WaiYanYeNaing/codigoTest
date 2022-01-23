@@ -1,5 +1,4 @@
 import Categories from "../components/IndexPage/Categories";
-import Footer from "../components/IndexPage/Footer";
 import Title from "../components/IndexPage/Title";
 import WorkCard from "../components/IndexPage/WorkCard";
 import Layout from "../components/Layout";
@@ -14,8 +13,6 @@ const Home = () => {
         <Categories />
 
         <WorkCard />
-
-        {/* <Footer /> */}
       </Layout>
     </div>
   );
