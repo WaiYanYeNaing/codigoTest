@@ -10,7 +10,9 @@ const OcbcDetailLeft = () => {
       <Row style={{ paddingTop: "140px" }}>
         {/* Title */}
         <Column span={12}>
-          <TextB style={{ fontSize: "64px" }}>OCBC Pay Anyone</TextB>
+          <TextB style={{ fontSize: "64px" }} className={styles.title}>
+            OCBC Pay Anyone
+          </TextB>
         </Column>
 
         {/* DownloadType */}

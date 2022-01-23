@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./WorkCard.module.css";
 import { useRouter } from "next/router";
+import Text from "../Text.js";
+import TextB from "../TextB.js";
 
 const WorkCard = () => {
   const router = useRouter();
@@ -321,8 +323,30 @@ const WorkCard = () => {
             style={{ gridColumn: `span ${v.flex}` }}
             onClick={() => router.push("/ocbc-pay-anyone")}
           >
-            <div className={styles.img_category}>{v.category}</div>
-            <div className={styles.img_title}>{v.title}</div>
+            <div className={styles.img_category}>
+              <Text
+                style={{
+                  ...(v.id == 14 || v.id == 6 || v.id == 17
+                    ? { color: "#000" }
+                    : {}),
+                  ...{ fontSize: "0.875vw" },
+                }}
+              >
+                {v.category}
+              </Text>
+            </div>
+            <div className={styles.img_title}>
+              <TextB
+                style={{
+                  ...(v.id == 14 || v.id == 6 || v.id == 17
+                    ? { color: "#000" }
+                    : {}),
+                  ...{ fontSize: "1.5vw" },
+                }}
+              >
+                {v.title}
+              </TextB>
+            </div>
             {v.icons[0] && (
               <div
                 className={styles.icon_container}

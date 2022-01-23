@@ -41,7 +41,9 @@ const NavBar = () => {
               <nav className={styles.nav}>
                 <a
                   href="#"
-                  className={(styles.nav_item, styles.current_nav_item)}
+                  className={[styles.nav_item, styles.current_nav_item].join(
+                    " "
+                  )}
                 >
                   Work
                 </a>
