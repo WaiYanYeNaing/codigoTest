@@ -47,7 +47,7 @@ const Footer = () => {
             </Column>
           </Row>
         </Column>
-        <Column span={12}>{/* <Icons></Icons> */}</Column>
+        <Column span={12}> </Column>
         <div>
           <Link href="/">
             <a className={styles.href}>
