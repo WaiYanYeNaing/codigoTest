@@ -1,0 +1,15 @@
+.download_card {
+  margin-top: 26px;
+  cursor: pointer;
+  border: 1px solid #dad6da;
+  width: 134.4px;
+  height: 80px;
+  padding: 10px 16px;
+}
+
+.download_icon {
+  margin-bottom: 5px;
+}
+
+.detail {
+}

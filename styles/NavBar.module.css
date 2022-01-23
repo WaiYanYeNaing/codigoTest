@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   height: 60px;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0 50px;
 }
 
@@ -18,16 +18,54 @@
   height: 19px;
 }
 
-/* Nav Container */
+/* Back */
+.container {
+  display: flex;
+  cursor: pointer;
+}
+
+.back_icon {
+  width: 12px;
+  height: 15.36px;
+  transform: scaleX(-1);
+  margin-right: 14px;
+  padding: 1px 0 0;
+}
+
+.back {
+  position: relative;
+  text-decoration: none;
+  font-family: "Neue Einstellung", sans-serif;
+  color: #000;
+  font-size: 13.5px;
+  letter-spacing: 0.7px;
+  padding: 0 1.5px;
+}
+
+.back:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 1.5px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.back:hover::after {
+  width: 100%;
+}
+
+/* Nav */
 .nav_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 672px;
+  min-width: 570px;
   height: 60px;
 }
 
-/* Nav */
 .nav {
   min-width: 570px;
   display: flex;
