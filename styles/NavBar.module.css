@@ -66,6 +66,12 @@
   height: 60px;
 }
 
+@media (max-width: 980px) {
+  .nav_container {
+    display: none;
+  }
+}
+
 .nav {
   min-width: 570px;
   display: flex;
@@ -107,6 +113,12 @@
 .button_container {
   width: 147px;
   height: 48px;
+}
+
+@media (max-width: 980px) {
+  .button_container {
+    display: none;
+  }
 }
 
 .button {

@@ -1,21 +1,22 @@
-import Head from "next/head";
-import Image from "next/image";
 import Categories from "../components/IndexPage/Categories";
+import Footer from "../components/IndexPage/Footer";
 import Title from "../components/IndexPage/Title";
 import WorkCard from "../components/IndexPage/WorkCard";
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
     <div className={styles.container}>
-      <NavBar />
+      <Layout>
+        <Title />
 
-      <Title />
+        <Categories />
 
-      <Categories />
+        <WorkCard />
 
-      <WorkCard />
+        {/* <Footer /> */}
+      </Layout>
     </div>
   );
 };

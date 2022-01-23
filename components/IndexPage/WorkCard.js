@@ -332,7 +332,7 @@ const WorkCard = () => {
                   ...{ fontSize: "0.875vw" },
                 }}
               >
-                {v.category}
+                <span className={styles.img_category_text}>{v.category}</span>
               </Text>
             </div>
             <div className={styles.img_title}>
@@ -344,7 +344,7 @@ const WorkCard = () => {
                   ...{ fontSize: "1.5vw" },
                 }}
               >
-                {v.title}
+                <span className={styles.img_title_text}>{v.title}</span>
               </TextB>
             </div>
             {v.icons[0] && (

@@ -1,7 +1,7 @@
 import React from "react";
 
 const OcbcDetailRight = () => {
-  return <div>ccc</div>;
+  return <div></div>;
 };
 
 export default OcbcDetailRight;

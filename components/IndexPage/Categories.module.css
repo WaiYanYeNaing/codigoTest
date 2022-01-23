@@ -1,11 +1,48 @@
 .container {
   width: 75%;
   margin: 0 auto;
-  margin: 125px auto 0;
+  margin: 35px auto 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .category_name {
   font-family: "Neue Einstellung", sans-serif;
   color: #000;
-  font-size: 16px;
+  font-size: 0.96rem;
+  letter-spacing: -0.25px;
+}
+
+.legend {
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+.legend_details_container {
+  border-left: 1px solid #000;
+  padding: 0px 20px;
+  margin: 10px 0;
+  height: 77px;
+}
+
+.legend_details_icons {
+  width: 13px;
+  height: 13px;
+  margin-top: 3px;
+  margin-right: 7px;
+}
+
+.legend_details {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
 }
