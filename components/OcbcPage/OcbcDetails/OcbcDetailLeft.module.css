@@ -3,7 +3,8 @@
 }
 
 .download_card {
-  margin-top: 26px;
+  margin-top: 43px;
+  margin-bottom: 52px;
   cursor: pointer;
   border: 1px solid #dad6da;
   width: 134.4px;
@@ -13,4 +14,9 @@
 
 .download_icon {
   margin-bottom: 5px;
+}
+
+.detail {
+  width: 85%;
+  line-height: 27px;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Column } from "../../Column";
 import Row from "../../Row";
+import Text from "../../Text";
 import TextB from "../../TextB";
 import styles from "./OcbcDetailLeft.module.css";
 
@@ -50,6 +51,18 @@ const OcbcDetailLeft = () => {
                 Google play
               </TextB>
             </div>
+          </Row>
+
+          <Row>
+            <Column span={12}>
+              <div className={styles.detail}>
+                <Text style={{ fontSize: "1rem", color: "#272727" }}>
+                  You can now pay kopitiam uncles, merchants, peers, and dears
+                  with the OCBC Pay Anyone app, and you can even withdraw cash
+                  by scanning the QR code at OCBC’s ATMs without your card!
+                </Text>
+              </div>
+            </Column>
           </Row>
         </Column>
       </Row>
